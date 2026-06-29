@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;title&gt;NeighborRent App&lt;/title&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">body {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: Arial;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #f2f2f2;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">header {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #2e7d32;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 20px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.screen {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 15px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.active {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: block;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.card {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 10px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">button {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #2e7d32;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 6px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 100%;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">input, select {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 8px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.nav {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>bottom: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-top: 1px solid #ccc;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.nav button {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: black;</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;header&gt;NeighborRent&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- HOME --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="home" class="screen active"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- POST --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="post" class="screen"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h3&gt;Post an Item&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;input id="itemName" placeholder="Item name"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;input id="itemPrice" placeholder="Price per day"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="addItem()"&gt;Post Item&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- REQUESTS --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="requests" class="screen"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h3&gt;Requests&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="requestList"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- RENT SCREEN --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="rentScreen" class="screen"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- NAV --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="nav"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="showScreen('home')"&gt;Home&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="showScreen('post')"&gt;Post&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="showScreen('requests')"&gt;Requests&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">let items = [</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{name:"Lawn Mower", price:8},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{name:"Power Washer", price:10}</p>
+<p class="p1">];</p>
+<p class="p2"><br></p>
+<p class="p1">let requests = [];</p>
+<p class="p2"><br></p>
+<p class="p1">function showScreen(screen) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.querySelectorAll(".screen").forEach(s =&gt; s.classList.remove("active"));</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById(screen).classList.add("active");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(screen === "home") renderHome();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(screen === "requests") renderRequests();</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function renderHome() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let html = "&lt;h3&gt;Available Items&lt;/h3&gt;";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>items.forEach((item, i) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>html += `</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;${item.name}&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;$${item.price}/day&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button onclick="openRent(${i})"&gt;Rent&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById("home").innerHTML = html;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function addItem() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let name = document.getElementById("itemName").value;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let price = document.getElementById("itemPrice").value;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(name &amp;&amp; price){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>items.push({name, price});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById("itemName").value = "";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById("itemPrice").value = "";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>showScreen("home");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function openRent(index) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let item = items[index];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>let html = `</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;${item.name}&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;$${item.price}/day&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label&gt;Days:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input id="days" type="number" value="1"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label&gt;Payment Method:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;select id="payment"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;option value="Card"&gt;Card&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;option value="Cash"&gt;Cash&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/select&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="submitRequest(${index})"&gt;Confirm Request&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="showScreen('home')"&gt;Back&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById("rentScreen").innerHTML = html;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>showScreen("rentScreen");</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function submitRequest(index) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let days = document.getElementById("days").value;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let payment = document.getElementById("payment").value;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let item = items[index];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>let total = item.price * days;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>requests.push({</p>
+<p class="p1"><span class="Apple-converted-space">    </span>item: item.name,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>days: days,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>payment: payment,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>total: total</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>alert("Request Sent! Total: $" + total);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>showScreen("requests");</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function renderRequests() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let html = "";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(requests.length === 0){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>html = "&lt;p&gt;No requests yet&lt;/p&gt;";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>requests.forEach(r =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>html += `</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h4&gt;${r.item}&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Days: ${r.days}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Payment: ${r.payment}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Total: $${r.total}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById("requestList").innerHTML = html;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">renderHome();</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
